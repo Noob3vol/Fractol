@@ -6,7 +6,7 @@
 /*   By: iguidado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 13:57:00 by iguidado          #+#    #+#             */
-/*   Updated: 2022/01/22 07:30:13 by iguidado         ###   ########.fr       */
+/*   Updated: 2022/01/11 02:40:51 by iguidado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	parse_fractal(t_env *env, int argc, char **argv)
 		return (0);
 	while (i < E_MAX)
 	{
-		if (ft_strncmp(argv[1], names[i], ft_strlen(names[i]) + 1) == 0)
+		if (ft_strncmp(argv[1], names[i], ft_strlen(names[i])) == 0)
 		{
 			env->fractal_id = (char)i;
 			return (1);
